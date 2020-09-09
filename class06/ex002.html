@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Comments in html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My second program</title>
+    <style>
+        body {
+            /* Comments in css */
+            background-color: rgb(211, 36, 132);
+            color: white;
+            font: normal 20pt courier ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Coding Master shall teach me</p>
+    <script>
+        // Comments in javascript
+        var number1 = Number.parseFloat(window.prompt('type a number')); // This always returns string
+        var number2 = Number.parseFloat(window.prompt('type another number')); // Use Number to convert types
+
+        window.alert('addition: ' + Number(number1 + number2));
+        /*
+            I can also convert a variable to string like this:
+                String(variable) or
+                variable.toString()
+        */
+
+        var name = window.prompt('your name is...');
+        var dollars = 10.0;
+        dollars = dollars.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+        var message = `${name} has ${dollars} dollars`; // needs to be ` backticks for interpolation
+        document.write(`the following message have ${message.length} characters!<br><b>${message.toUpperCase()}</b><br>`);
+    </script>
+</body>
+</html>
